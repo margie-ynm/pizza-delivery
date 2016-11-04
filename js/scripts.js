@@ -7,6 +7,11 @@ function Pizza(size, sauce, extra, toppings) {
   this.toppingsChoice = toppings;
 }
 
+Pizza.prototype.cost = function() {
+  debugger;
+  var calculate = this.sizeChoice + this.sauceChoice + this.extraChoice + this.toppingsChoice;
+  return calculate;
+}
 
 //user interface
 $(document).ready(function() {
@@ -21,5 +26,7 @@ $(document).ready(function() {
       toppingsChoice++;
     });
     var newPizza = new Pizza(sizeChoice, sauceChoice, extraChoice, toppingsChoice);
+
+    $("#output").append("<h3>" + "The total cost for your pizza is:" + " " + "$" + newPizza.cost() + "</h2>");
   });
 });
