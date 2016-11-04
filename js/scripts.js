@@ -18,6 +18,7 @@ $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
     debugger;
+    $("#output").empty();
     var sizeChoice = parseInt($("#size").val());
     var sauceChoice = parseInt($("#sauce").val());
     var extraChoice = parseInt($("#extra").val());
