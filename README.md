@@ -8,7 +8,7 @@
 
 ## Description
 
-_The site will allow the user to select the size and toppings for a pizza. After submitting form, a cost will display for created pizza._
+_The site will allow the user to select the size and toppings for a pizza. After submitting form, a cost will display for the created pizza._
 
 ## Setup/Installation Requirements
 
@@ -16,9 +16,9 @@ _The site will allow the user to select the size and toppings for a pizza. After
 
 ## Specifications
 
-* _It will take user's inputs i.e. size of pizza and toppings selected._
+* _Take user's inputs i.e. size of pizza and toppings selected._
 * _Determine price of pizza based on submitted choices._
-* _Outputs cost of pizza_
+* _Output cost of pizza_
 
 ## Support and contact details
 
