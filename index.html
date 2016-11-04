@@ -9,7 +9,48 @@
   </head>
   <body>
     <div class="container">
-    
+      <h1>Go Go Gourmet Pizza</h1>
+      <form>
+        <h2>Build Your Own Pizza</h2>
+        <label for="size">Choose the size of your pizza:</label>
+        <select class="form-control" id="size">
+          <option value="0"></option>
+          <option value="5">Small</option>
+          <option value="7">Medium</option>
+          <option value="9">Large</option>
+        </select>
+        <label for="sauce">Choose a sauce:</label>
+        <select class="form-control" id="sauce">
+          <option value="0"></option>
+          <option value="0">Tomato Sauce</option>
+          <option value="1">Bbq Sauce</option>
+          <option value="1">Alfredo Sauce</option>
+        </select>
+        <label for="sauce">Did you want extra cheese?</label>
+        <select class="form-control" id="sauce">
+          <option value="0"></option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+        <div class="form-group">
+          <p>Choose Meats:</p>
+          <input type="checkbox" name="meats" value="1">Pepporoni</br>
+          <input type="checkbox" name="meats" value="1">Bacon</br>
+          <input type="checkbox" name="meats" value="1">Chicken</br>
+          <input type="checkbox" name="meats" value="1">Italian Sausage</br>
+          <input type="checkbox" name="meats" value="1">Ham</br>
+          <p>Non-Meats:</p>
+          <input type="checkbox" name="nonmeats" value="1">Cheddar Cheese</br>
+          <input type="checkbox" name="nonmeats" value="1">Banana Peppers</br>
+          <input type="checkbox" name="nonmeats" value="1">Mushrooms</br>
+          <input type="checkbox" name="nonmeats" value="1">Onions</br>
+          <input type="checkbox" name="nonmeats" value="1">Pineapple</br>
+          <input type="checkbox" name="nonmeats" value="1">Diced Tomatoes</br>
+          <input type="checkbox" name="nonmeats" value="1">Green Peppers</br>
+          <input type="checkbox" name="nonmeats" value="1">Black Olives</br>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
     </div><!--end of container-->
   </body>
 </html>
