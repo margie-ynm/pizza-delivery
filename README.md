@@ -4,7 +4,7 @@
 
 #### By _**Margie Nevarez**_
 
-##### To view on gh-pages click here: [margie-ynm](https://margie-ynm.github.io/pizza-delivery)
+##### To view on gh-pages click here: [margie-ynm](https://margie-ynm.github.io/pizza-order)
 
 ## Description
 
