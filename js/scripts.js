@@ -1,6 +1,5 @@
 //business logic
 function Pizza(size, sauce, cheese, toppings) {
-  debugger;
   this.sizeChoice = size;
   this.sauceChoice = sauce;
   this.cheeseChoice = cheese;
@@ -8,7 +7,6 @@ function Pizza(size, sauce, cheese, toppings) {
 }
 
 Pizza.prototype.cost = function() {
-  debugger;
   var calculate = this.sizeChoice + this.sauceChoice + this.cheeseChoice + this.toppingsChoice;
   return calculate;
 }
@@ -17,7 +15,6 @@ Pizza.prototype.cost = function() {
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-    debugger;
     $("#output").empty();
     var sizeChoice = parseInt($("#size").val());
     var sauceChoice = parseInt($("#sauce").val());
