@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo|Shrikhand" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.1.js" type="text/javascript"></script>
@@ -11,48 +12,67 @@
     <div class="container">
       <h1>Go Go Gourmet Pizza</h1>
       <form>
-        <h2>Build Your Own Pizza</h2>
-        <label for="size">Choose the size of your pizza:</label>
-        <select class="form-control" id="size">
-          <option value="0"></option>
-          <option value="5">Small</option>
-          <option value="7">Medium</option>
-          <option value="9">Large</option>
-        </select>
-        <label for="sauce">Choose a sauce:</label>
-        <select class="form-control" id="sauce">
-          <option value="0"></option>
-          <option value="0">Tomato Sauce</option>
-          <option value="1">Bbq Sauce</option>
-          <option value="1">Alfredo Sauce</option>
-        </select>
-        <label for="extra">Did you want extra cheese?</label>
-        <select class="form-control" id="extra">
-          <option value="0"></option>
-          <option value="1">Yes</option>
-          <option value="0">No</option>
-        </select>
-        <div class="form-group">
-          <p>Choose Meats:</p>
-          <input type="checkbox" name="toppings">Pepporoni</br>
-          <input type="checkbox" name="toppings">Bacon</br>
-          <input type="checkbox" name="toppings">Chicken</br>
-          <input type="checkbox" name="toppings">Italian Sausage</br>
-          <input type="checkbox" name="toppings">Ham</br>
-          <p>Non-Meats:</p>
-          <input type="checkbox" name="toppings">Cheddar Cheese</br>
-          <input type="checkbox" name="toppings">Banana Peppers</br>
-          <input type="checkbox" name="toppings">Mushrooms</br>
-          <input type="checkbox" name="toppings">Onions</br>
-          <input type="checkbox" name="toppings">Pineapple</br>
-          <input type="checkbox" name="toppings">Diced Tomatoes</br>
-          <input type="checkbox" name="toppings">Green Peppers</br>
-          <input type="checkbox" name="toppings">Black Olives</br>
+        <div class="well">
+          <h2>Build Your Own Pizza</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <label for="size">Choose the size of your pizza:</label>
+              <select class="form-control" id="size">
+                <option value="0"></option>
+                <option value="5">Small</option>
+                <option value="7">Medium</option>
+                <option value="9">Large</option>
+              </select>
+              <label for="sauce">Choose a sauce:</label>
+              <select class="form-control" id="sauce">
+                <option value="0"></option>
+                <option value="0">Tomato Sauce</option>
+                <option value="1">Bbq Sauce</option>
+                <option value="1">Alfredo Sauce</option>
+              </select>
+              <label for="sauce">What kind of cheese?</label>
+              <select class="form-control" id="cheese">
+                <option value="0"></option>
+                <option value="1">Mozerrella</option>
+                <option value="1">Provolone</option>
+                <option value="1">Parmesan</option>
+              </select>
+            </div><!--end of column-->
+            <div class="row">
+              <div class="form-group">
+                <div class="col-md-3">
+                  <p>Choose Meats:</p>
+                  <input type="checkbox" name="toppings">Pepporoni</br>
+                  <input type="checkbox" name="toppings">Bacon</br>
+                  <input type="checkbox" name="toppings">Chicken</br>
+                  <input type="checkbox" name="toppings">Italian Sausage</br>
+                  <input type="checkbox" name="toppings">Philly Cheese Steak</br>
+                  <input type="checkbox" name="toppings">Chicken Bacon Ranch</br>
+                  <input type="checkbox" name="toppings">Salami</br>
+                </div>
+                <div class="col-md-3">
+                  <p>Non-Meats:</p>
+                  <input type="checkbox" name="toppings">Cheddar Cheese</br>
+                  <input type="checkbox" name="toppings">Banana Peppers</br>
+                  <input type="checkbox" name="toppings">Mushrooms</br>
+                  <input type="checkbox" name="toppings">Onions</br>
+                  <input type="checkbox" name="toppings">Pineapple</br>
+                  <input type="checkbox" name="toppings">Diced Tomatoes</br>
+                  <input type="checkbox" name="toppings">Green Peppers</br>
+                  <input type="checkbox" name="toppings">Black Olives</br>
+                </div>
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-3">
+                </div>
+              </div><!--end of form group-->
+            </div>
+          </div><!--end of row-->
+          <button type="submit" class="btn">Submit</button>
+        </form>
+        <div id="output">
         </div>
-        <button type="submit" class="btn">Submit</button>
-      </form>
-      <div id="output">
-      </div>
+      </div><!--end of well-->
     </div><!--end of container-->
   </body>
 </html>
